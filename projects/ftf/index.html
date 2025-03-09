@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feel the Force</title>
+    <link rel="stylesheet" href="../projects.css" />
+    <!-- CHANGE ICON ASSETS -->
+    <link rel="icon" href="../../assets/img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <a class="home" href="../../index.html">back to home</a>
+    <section class="margin-section">
+      <div style="height: 3em"></div>
+      <div class="header">
+        <span class="project-title">Feel the Force</span>
+        <span class="project-subtitle">
+        Resistive Force Sensors for Closed Loop Feedback
+        </span>
+        <span class="author-names">
+        Sophia Wang
+        </span>
+        <div class="links">
+          <span>Toyota Research Institute 2023 - 2024</span>
+          <!-- <a
+            href="voxelcopter_paper.pdf"
+            target="_blank"
+            rel="noopener noreferrer">
+            Paper PDF
+          </a>
+          <a
+            href="https://doi.org/10.1145/3623263.3629155"
+            target="_blank"
+            rel="noopener noreferrer">
+            ACM SCF
+          </a> -->
+          <!-- <a
+            href="https://machineagency.github.io/blended-primitives/"
+            target="_blank"
+            rel="noopener noreferrer">
+            Live Site
+          </a> -->
+          <!-- <a
+            href="https://github.com/machineagency/blended-primitives"
+            target="_blank"
+            rel="noopener noreferrer">
+            Source Code Repository
+          </a> -->
+        </div>
+      </div>
+    </section>
+    <section class="no-margin-section">
+      <img class="teaser" src="teaser.png" />
+    </section>
+    <section class="margin-section">
+      <div class="teaser-caption">
+        Two approaches to force sensing: flex-PCBs and cured, laser-induced graphene (LIG). 
+      </div>
+
+      <h3 class="section-title"></h3>
+      <p class="abstract">
+        The goal is to design voxel force sensing modules to receive: (a) force data while 
+        building structures (load data allows for adaptively placed voxels) and (b) force 
+        feedback in the robots (force sensors on feet, closed-loop control). 
+
+        <br>
+        <br> <em><strong>(flex-PCB approach)</strong></em> The board is a flex board, designed to measure force along each of its four edges. 
+        The overall board dimensions are 50 mm x 50 mm, with compatible joints to be used with existing voxel boards. 
+        The ATtiny412, two IO pins for reading the Wheatstone bridge, and UPDI programming attachment holes are uesd. 
+        Each flexure is 0.9 mm away from the next. All inner corners are rounded. Traces are 4 mils wide, pushing the 
+        resolution of JLCPCB (which can achieve a minimum of 0.08 mm, ~3 mil traces). Versions have been made with 
+        0.3 mm and 0.6 mm flexures, but I will first use an expanded version to test whether resistive sensing strain 
+        gauge can detect significant and fine enough changes in resistance to demonstrate accurate force measurement.
+
+        <br>
+        <br> <em><strong>(LIG approach)</strong></em> Force sensors are fabricated using LIG with a resistive sensing mechanism. 
+        Using a polyamide sheet, a graphene layer with thin traces induced by a CO2 laser is generated. 
+        The sensor is then encapsulated with a thin elastomeric layer (such as PDMS, a silicone elastomer) 
+        to function fully as a strain gauge.
+
+        <br>
+        <br>
+        <br>
+      </p>
+    </section>
+    <!-- INSERT CORRECT VIDEO -->
+    <!-- <iframe
+    class="no-margin-section video-iframe"
+    src="Voxelcopter Demo.mp4"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe> -->
+  <!-- <section class="margin-section">
+    <h3 class="section-title">Bibtex</h3>
+    <pre class="bibtex">
+@inproceedings{twigg2024blendedprimitives,
+  title={What's in a Cable? Abstracting Knitting Design Elements with Blended Raster/Vector Primitives},
+  author={Twigg-Smith, Hannah and Peng, Yuecheng and Whiting, Emily and Peek, Nadya},
+  booktitle={UIST '24: Proceedings of the 37th Annual ACM Symposium on User Interface Software and Technology},
+  pages={1--20},
+  year={2024}
+}
+</pre>
+  </section>
+  </body>
+</html> -->

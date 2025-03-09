@@ -1,0 +1,149 @@
+@font-face {
+    font-family: "Inter";
+    src: url("../assets/fonts/Inter-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Inter";
+    src: url("../assets/fonts/Inter-Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Inter";
+    src: url("../assets/fonts/Inter-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Inter";
+    src: url("../assets/fonts/Inter-BoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: "Inter";
+    src: url("../assets/fonts/Inter-Light.ttf") format("truetype");
+    font-weight: lighter;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Inter";
+    src: url("../assets/fonts/Inter-LightItalic.ttf") format("truetype");
+    font-weight: lighter;
+    font-style: italic;
+  }
+  
+  html {
+    font-family: "Inter", sans-serif;
+  }
+  
+  body {
+    --col-width: 800px;
+    color: #eeeeee;
+    background-color: #111111;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: var(--col-width);
+  }
+  
+  a {
+    color: inherit;
+  }
+  
+  .home {
+    position: absolute;
+    right: 0;
+    padding: 0.2em 0.4em;
+    color: #cccccc;
+    font-style: italic;
+    background-color: #111111;
+  }
+  
+  .no-margin-section {
+    width: 100%;
+    max-width: calc(var(--col-width) - 2em);
+    align-self: center;
+  }
+  
+  .margin-section {
+    margin: 0 1em;
+  }
+  
+  summary > h2 {
+    display: inline-block;
+  }
+  
+  .teaser {
+    width: 100%;
+  }
+  
+  .teaser-caption {
+    font-size: small;
+    line-height: 1;
+    margin-top: 0.5rem;
+    color: #cccccc;
+    font-style: italic;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+  }
+  
+  .project-title {
+    font-weight: bold;
+    font-size: 2em;
+  }
+  
+  .project-subtitle {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #cccccc;
+    margin-top: 0.3em;
+  }
+  
+  .author-names {
+    font-size: 0.9em;
+    margin-top: 1em;
+  }
+  
+  .links {
+    display: flex;
+    gap: 0.5em;
+    margin-top: 1em;
+    font-style: italic;
+    font-size: 0.75em;
+    flex-wrap: wrap;
+    color: #cccccc;
+  }
+  
+  .section-title {
+    margin: 2em 0 0.5em 0;
+    color: #cccccc;
+    font-size: 1em;
+  }
+  
+  .abstract {
+    font-weight: 300;
+    color: #bbbbbb;
+    text-align: justify;
+    line-height: 1.2;
+  }
+  
+  .video-iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+    margin: 2em 0;
+  }
+  
+  .bibtex {
+    white-space: pre-wrap;
+    font-size: 0.9em;
+    color: #bbbbbb;
+  }
